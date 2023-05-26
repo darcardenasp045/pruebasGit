@@ -1,0 +1,13 @@
+h1{
+    background: linear-gradient(to right, #ff0000, #00ff00);
+    display: inline-block;
+    background-clip:content-box;
+    
+  
+}
+
+h2{
+    background-color: blueviolet;
+    display: inline-block;
+   
+}
