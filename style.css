@@ -1,17 +1,39 @@
-h1{
-    background: linear-gradient(to right, #ff0000, #00ff00);
-    display: inline-block;
-    background-clip:content-box;
-    
-  
+#board {
+display: grid;
+grid-template-columns: repeat(8, 80px);
+grid-template-rows: repeat(8, 80px);
 }
 
-h2{
-    background-color: blueviolet;
-    display: inline-block;
-   
+.cell {
+background-color: #f0f0f0;
+border: 1px solid #ccc;
 }
 
-h3{
-    color:gray
+.piece, .peon {
+width: 80px;
+height: 80px;
+}
+
+.selected {
+background-color: yellow;
+}
+
+.possible-move {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 60px;
+height: 60px;
+background-color: #99ff99;
+z-index: 1;
+
+}
+
+.box-color-white{
+    background-color: white;
+    z-index: 999;
+}
+.box-color-black{
+    background-color: black;
+    z-index: 999;
 }
